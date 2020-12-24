@@ -1,0 +1,39 @@
+Article Number 1.
+
+Title : How to think like a programmer.
+ 
+Writer name 
+: Richard Reis
+
+Link : https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/?source=post_page-----da1024785c8e----------------------
+
+
+Article Number 2.
+ 
+Title : How not to be a mediocre developer!.
+
+Link : https://hackernoon.com/how-not-to-be-a-mediocre-developer-c59a49f97fc5?source=post_page-----da1024785c8e----------------------
+
+Writer name : 
+
+
+
+Article Number 3.
+ 
+Title : Beginner Programmers' Mistakes.
+
+Link : https://jscomplete.com/learn/pro-programmer/beginner-programmers-mistakes
+
+Writer name : 
+
+
+
+Article Number 4.
+ 
+Title : Don’t be a Junior Developer ????.
+
+Link : https://medium.com/zerotomastery/dont-be-a-junior-developer-608c255b3056
+
+Writer name : Andrei Neagoie
+
+

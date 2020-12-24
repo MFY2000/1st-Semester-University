@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    body{
+        background-color: black;
+        color: rgb(44, 255, 97);
+        /* font-family: ; */
+
+    }
+    h1{
+        padding: 10%;
+        text-align: center;
+        font-size: 100px;
+        /* border: 2% solid red; */
+    }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+        
+
+    </div>
+
+</body>
+<script>
+    var d=new Date(),
+    h=d.getHours(),
+    m=d.getMinutes(),
+    s=d.getSeconds();
+
+setInterval(() => {
+    s++;
+    
+    if(s==60){
+        s=0;
+        m++;
+    
+        if(m==60){
+            m=0;
+            h++;
+    
+            if(h==24){
+                h=0;
+            }
+        }
+    }
+   document.getElementById("main").innerHTML = "<h1>"+ h +":"+ m +":"+ s+"</h1>"; 
+}, 1000);
+
+
+
+
+
+</script>
+</html>

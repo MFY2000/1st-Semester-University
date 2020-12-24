@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tab Color</title>
+</head>
+<style>
+*{
+    text-align-last: center;
+}
+</style>
+<body>
+    <form onsubmit="Colored()" method="dialog">
+        <label>
+            Enter the Background Color
+        </label>
+        <input type="color" id="back_Color" required />
+        <br><br>
+     
+        <label>
+            Enter the Font-Color 
+        </label>
+        <input type="color" id="Color" required />
+        <br><br>
+        
+        <label>
+            Enter the Cell Number
+        </label>
+        <input type="text" id="Number" required />
+        <br><br>
+        <input type="submit" value="Sumbit" >
+        <br><br>
+
+    </form>
+    
+       
+    
+
+
+
+
+
+    <table width='100%' border="1px solid black">
+
+        <thead>
+            <tr>
+                <th>I</th>
+                <th>J</th>
+                <th>K</th>
+            </tr>
+        </thead>
+        
+        <tbody id="tbody"> </tbody>
+    </table>
+
+
+</body>
+
+
+<script>
+
+function Colored(){
+    var back_Color = document.getElementById("back_Color").value;
+    var Color = document.getElementById("Color").value;
+    var cell = document.getElementById("Number").value;
+
+    var style = "'background-color: "+ back_Color +"; color: "+ Color +";'";
+    
+    var x = document.getElementById(cell).style;
+
+    x.backgroundColor = back_Color;
+    x.color=Color;
+
+    document.getElementById("back_Color").value='';
+    }
+
+
+for(var i = 1 ; i < 20 ; i++ ){
+
+    var tr = " <tr><td  id='I"+ i +"'>I"+i+"</th><td  id='J"+ i +"'>J"+i+"</th><td  id='K"+ i +"'>K"+i+"</th></tr>"
+    
+     document.getElementById("tbody").innerHTML += tr;
+
+}
+
+
+</script>
+
+</html>

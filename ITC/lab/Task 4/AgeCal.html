@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Age Calculator</title>
+	</head>
+	<body>
+	    <h1><cenrter>Age Calculator</cenrter></h1>
+		Date Of Birth: 
+		<input type="datetime-local" id="birth_date" required />
+		<input class="btn" type="button" value="Calculate Age" onclick="ageCalculate()">
+        <br/><br/>
+        Age: 
+        <br/>
+        <br/>
+        <div>
+            
+            <h1  id="age"></h1> 
+
+        </div>
+        
+<p id="demo"></p>
+    </body>
+
+        <script>
+            function ageCalculate(){
+               var birth_date = document.getElementById("birth_date").value;
+
+                var date = new Date();
+                var year = date.getFullYear();
+                var month = date.getMonth();
+                var day = date.getDate();
+                var Hours = date.getHours();
+                var min = date.getMinutes();
+
+                var user = new Date(birth_date)
+                var user_year = user.getFullYear();
+                var user_month = user.getMonth();
+                var user_day = user.getDate();
+                var user_Hours = user.getHours();
+                var user_min = user.getMinutes();
+
+                var cuttent_age_year = year - user_year;
+                var cuttent_age_month = month - user_month;
+                var cuttent_age_day = day - user_day;
+                var cuttent_age_Hours = Hours - user_Hours;
+                var cuttent_age_min = min - user_min;
+
+                var Total = "Your Age is: "+cuttent_age_year +" year : "+ cuttent_age_month +" month : "+cuttent_age_day+" day : "+cuttent_age_Hours +" hours : "+cuttent_age_min+" minute";
+                
+                document.getElementById("age").innerHTML = Total;
+
+
+
+
+
+
+            }
+            
+        </script>
+
+</html>
